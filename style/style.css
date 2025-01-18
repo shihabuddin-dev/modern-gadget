@@ -2,6 +2,8 @@
 
 body{
     font-family: "Poppins", serif;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 *{
@@ -69,4 +71,13 @@ nav ul{
 font-size: 52px;
 font-weight: 700;
 line-height: 70px;
+}
+
+
+@media only screen and (max-width:576px){
+    .hero{
+        flex-direction: column-reverse;
+        background-image: none;
+    }
+    
 }
