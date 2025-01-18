@@ -9,10 +9,28 @@ body{
     padding: 0 auto;
 }
 
-
+/* Common Styles */
+.display-flex{
+    display: flex;
+}
+.section-caption{
+    color: rgb(58, 58, 58);
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+padding: 20px 0 20px 0;
+}
+.btn-primary{
+    color: rgb(255, 255, 255);
+font-size: 16px;
+font-weight: 700;
+    padding: 10px 24px 10px 24px;
+    border-radius: 41px;
+    border: none;
+background: rgb(224, 44, 109);
+}
 /* Navbar Styles  */
 .navbar{
-    display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
@@ -24,15 +42,31 @@ font-size: 34px;
 font-weight: 700;
 }
 nav ul{
-    display: flex;
     gap: 30px;
 }
 .navbar> ul> li{
-    
         list-style: none;
         text-decoration: none;
 }
 .navbar> ul> li> a{
         text-decoration: none;
         color: black;
+       
+}
+
+/* Hero Section Styles */
+.hero{
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right 85px top 1px;
+    padding: 30px 0;
+}
+.hero-title{
+    color: rgb(58, 58, 58);
+font-size: 52px;
+font-weight: 700;
+line-height: 70px;
 }
