@@ -34,9 +34,11 @@ body {
     border: none;
     background: rgb(224, 44, 109);
 }
-span{
+
+span {
     color: rgb(224, 44, 109);
 }
+
 /* Navbar Styles  */
 .navbar {
     align-items: center;
@@ -83,21 +85,43 @@ nav ul {
     font-weight: 700;
     line-height: 70px;
 }
+
 /* Company Images Section styles */
-.company{
+.company {
     width: 1110px;
     padding: 100px 0 100px 0;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    
-}
-/* Popular collection section styles */
 
+}
+
+/* Popular collection section styles */
+.section-title {
+    text-align: center;
+    color: rgb(58, 58, 58);
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.collection {
+    width: 1047px;
+}
+
+.hole-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
 
 @media only screen and (max-width:576px) {
     .navbar {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .hero-text {
+        text-align: center;
     }
 
     .hero {
@@ -106,9 +130,10 @@ nav ul {
         gap: 20px;
 
     }
-    .company{
+
+    .company {
         max-width: 576px;
         grid-template-columns: repeat(4, 1fr);
-        
+
     }
 }
