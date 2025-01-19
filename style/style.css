@@ -157,26 +157,31 @@ nav ul {
     font-size: 2.3rem;
     font-weight: 700;
 }
-.feature p{
+
+.feature p {
     padding: 20px 0;
 }
+
 /* Footer section Styles */
-footer{
+footer {
     background-color: black;
     text-align: center;
     padding: 30px 0;
 }
-footer h2{
+
+footer h2 {
     color: rgb(255, 255, 255);
-font-size: 1rem;
-font-weight: 700;
+    font-size: 1rem;
+    font-weight: 700;
 
 }
-footer p{
+
+footer p {
     color: rgb(217, 219, 225);
-font-size: 0.75rem;
-font-weight: 700;
+    font-size: 0.75rem;
+    font-weight: 700;
 }
+
 @media only screen and (max-width:576px) {
     .navbar {
         flex-direction: column;
@@ -212,12 +217,14 @@ font-weight: 700;
     .see-more {
         padding-right: 120px;
     }
-    .feature{
+
+    .feature {
         flex-direction: column-reverse;
         max-width: 575px;
         margin: 0 auto;
     }
-    .feature-text{
+
+    .feature-text {
         text-align: center;
         max-width: 500px;
     }
