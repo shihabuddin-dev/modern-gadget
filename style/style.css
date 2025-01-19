@@ -75,7 +75,7 @@ nav ul {
     justify-content: space-between;
     background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
-    background-position: right 85px top 1px;
+    background-position: right 120px top 1px;
     padding: 30px 0;
 }
 
@@ -96,6 +96,10 @@ nav ul {
 }
 
 /* Popular collection section styles */
+.collection {
+    width: 1047px;
+    padding-bottom: 100px;
+}
 .section-title {
     text-align: center;
     color: rgb(58, 58, 58);
@@ -104,16 +108,35 @@ nav ul {
     margin-bottom: 50px;
 }
 
-.collection {
-    width: 1047px;
-}
 
 .hole-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-
+.card{
+    
+    width: 300px;
+height: 420px;
+border-radius: 5px;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+background: rgb(255, 255, 255);
+padding: 15px;
+}
+.card-title{
+    color: rgb(24, 25, 31);
+font-size: 1.75rem;
+font-weight: 500;
+}
+.card-subtitle{
+    color: rgba(0, 0, 0, 0.87);
+font-size: 24px;
+font-weight: 400;}
+.see-more{
+    padding-top: 30px;
+    text-align: right;
+    color: rgb(224, 44, 109);
+}
 @media only screen and (max-width:576px) {
     .navbar {
         flex-direction: column;
@@ -135,5 +158,16 @@ nav ul {
         max-width: 576px;
         grid-template-columns: repeat(4, 1fr);
 
+    }
+    .collection {
+        margin: 0 auto;
+        width: 575px;
+    }
+    .hole-card{
+        grid-template-columns: none;
+        justify-self: center;
+    }
+    .see-more{
+        padding-right: 120px;
     }
 }
