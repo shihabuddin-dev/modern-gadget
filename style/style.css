@@ -1,63 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+body {
     font-family: "Poppins", serif;
     max-width: 1440px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
-*{
+* {
     margin: 0 auto;
     padding: 0 auto;
 }
 
 /* Common Styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
-.section-caption{
+
+.section-caption {
     color: rgb(58, 58, 58);
-font-size: 16px;
-font-weight: 600;
-line-height: 24px;
-padding: 20px 0 20px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 20px 0 20px 0;
 }
-.btn-primary{
+
+.btn-primary {
     color: rgb(255, 255, 255);
-font-size: 16px;
-font-weight: 700;
+    font-size: 1rem;
+    font-weight: 700;
     padding: 10px 24px 10px 24px;
     border-radius: 41px;
     border: none;
-background: rgb(224, 44, 109);
+    background: rgb(224, 44, 109);
+}
+span{
+    color: rgb(224, 44, 109);
 }
 /* Navbar Styles  */
-.navbar{
+.navbar {
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
 }
-.navbar p{
+
+.navbar p {
     color: rgb(58, 58, 58);
-font-family: Poppins;
-font-size: 34px;
-font-weight: 700;
+    font-family: Poppins;
+    font-size: 2.1rem;
+    font-weight: 700;
 }
-nav ul{
+
+nav ul {
     gap: 30px;
 }
-.navbar> ul> li{
-        list-style: none;
-        text-decoration: none;
+
+.navbar>ul>li {
+    list-style: none;
+    text-decoration: none;
 }
-.navbar> ul> li> a{
-        text-decoration: none;
-        color: black;
-       
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    color: black;
+
 }
 
 /* Hero Section Styles */
-.hero{
+.hero {
     align-items: center;
     align-items: center;
     justify-content: space-between;
@@ -66,18 +76,39 @@ nav ul{
     background-position: right 85px top 1px;
     padding: 30px 0;
 }
-.hero-title{
+
+.hero-title {
     color: rgb(58, 58, 58);
-font-size: 52px;
-font-weight: 700;
-line-height: 70px;
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
 }
-
-
-@media only screen and (max-width:576px){
-    .hero{
-        flex-direction: column-reverse;
-        background-image: none;
-    }
+/* Company Images Section styles */
+.company{
+    width: 1110px;
+    padding: 100px 0 100px 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     
+}
+/* Popular collection section styles */
+
+
+@media only screen and (max-width:576px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        background-position: top 0px left 55px;
+        gap: 20px;
+
+    }
+    .company{
+        max-width: 576px;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
 }
